@@ -34,7 +34,7 @@ export const CUSTOMER_LOOKS: CharOpts[] = [
     scarf: PAL.terracota,
   },
   {
-    skin: 0xe9b98f,
+    skin: PAL.peleMorena,
     hair: PAL.madeira,
     hairStyle: 'long',
     top: PAL.terracota,
@@ -224,7 +224,7 @@ function drawTeaHouse(p: Pen): void {
   for (const x of [22, 74, 174, 226]) p.rect(x, 92, 8, 92);
   // shoji
   for (const wx of [36, 186]) {
-    p.fill(0xfbf3e2).rrect(wx, 106, 34, 40, 3, true);
+    p.fill(PAL.shoji).rrect(wx, 106, 34, 40, 3, true);
     p.line(1.2, PAL.madeira, 1);
     p.seg(wx + 11, 106, wx + 11, 146).seg(wx + 23, 106, wx + 23, 146);
     p.seg(wx, 119, wx + 34, 119).seg(wx, 132, wx + 34, 132);

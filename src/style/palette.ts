@@ -24,6 +24,10 @@ export const PAL = {
   terra: 0x9a6a48,
   terraMolhada: 0x6b4a36,
   pele: 0xf6d7b8,
+  peleMorena: 0xe9b98f,
+  shoji: 0xfbf3e2,
+  plantaSeca: 0xd8cfa8,
+  flashSuave: 0xfff4f4,
   moeda: 0xf2c14e,
   moedaClara: 0xffe08a,
   branco: 0xffffff,
@@ -48,6 +52,8 @@ export const CSS = {
   moeda: '#f2c14e',
   branco: '#ffffff',
   preto: '#000000',
+  musgoClaro: '#a7c47a',
+  sombraSuave: '#00000055',
   ceuAgua: '#9fd3e0',
 } as const;
 

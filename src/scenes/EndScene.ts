@@ -73,7 +73,7 @@ export class EndScene extends Phaser.Scene {
       const t = this.add
         .text(640, 360 + i * 48, l, style)
         .setOrigin(0.5)
-        .setShadow(0, 3, '#000', 0, true, true)
+        .setShadow(0, 3, CSS.preto, 0, true, true)
         .setAlpha(0);
       this.tweens.add({ targets: t, alpha: 1, delay: 200 + i * 120, duration: 250 });
     });

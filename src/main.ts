@@ -1,4 +1,5 @@
 import Phaser from 'phaser';
+import { CSS } from './style/palette';
 import { BootScene } from './scenes/BootScene';
 import { EndScene } from './scenes/EndScene';
 import { GameScene } from './scenes/GameScene';
@@ -25,7 +26,7 @@ function boot(): void {
     parent: 'game',
     width: 1280,
     height: 720,
-    backgroundColor: '#a7c47a',
+    backgroundColor: CSS.musgoClaro,
     antialias: true,
     roundPixels: true,
     fps: { target: 60 },

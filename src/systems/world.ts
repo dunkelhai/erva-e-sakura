@@ -223,7 +223,7 @@ export function buildWorld(scene: Phaser.Scene): World {
     .setScale(1 / RES)
     .setDepth(DEPTH.water);
   const mg = scene.make.graphics({}, false);
-  mg.fillStyle(0xffffff).fillEllipse(lk.x, lk.y, lk.w, lk.h, 40);
+  mg.fillStyle(PAL.branco).fillEllipse(lk.x, lk.y, lk.w, lk.h, 40);
   water.setMask(mg.createGeometryMask());
   for (const l of L.lilies) worldImage(scene, l.x, l.y, 'lily', 0.5).setDepth(DEPTH.water + 1);
   // colisão do lago em faixas horizontais

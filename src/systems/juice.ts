@@ -1,5 +1,6 @@
 import Phaser from 'phaser';
 import { SETTINGS } from '../config/settings';
+import { PAL } from '../style/palette';
 
 /** Shake leve (STYLE_GUIDE §1.3). Respeita "reduzir tremor/flash". */
 export function shakeLight(cam: Phaser.Cameras.Scene2D.Camera): void {
@@ -16,9 +17,9 @@ export function hitFlash(
   obj: Phaser.GameObjects.Image | Phaser.GameObjects.Sprite,
 ): void {
   if (SETTINGS.reduceMotion) {
-    obj.setTint(0xfff4f4);
+    obj.setTint(PAL.flashSuave);
   } else {
-    obj.setTintFill(0xffffff);
+    obj.setTintFill(PAL.branco);
   }
   scene.time.delayedCall(80, () => obj.clearTint());
 }

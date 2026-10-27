@@ -137,7 +137,7 @@ export class UIScene extends Phaser.Scene {
     return this.add
       .text(x, y, s, { fontFamily: FONT_UI, fontSize: `${size}px`, color, fontStyle: '700' })
       .setOrigin(0, 0.5)
-      .setShadow(0, 3, '#000', 0, true, true);
+      .setShadow(0, 3, CSS.preto, 0, true, true);
   }
 
   private buildHud(): void {
@@ -181,7 +181,7 @@ export class UIScene extends Phaser.Scene {
       .text(640, 682, '', { fontFamily: FONT_UI, fontSize: '20px', color: CSS.branco })
       .setOrigin(0.5)
       .setDepth(11)
-      .setShadow(0, 2, '#000', 0, true, true);
+      .setShadow(0, 2, CSS.preto, 0, true, true);
     this.toastText = this.add
       .text(640, 618, '', { fontFamily: FONT_UI, fontSize: '22px', color: CSS.taipa })
       .setOrigin(0.5)

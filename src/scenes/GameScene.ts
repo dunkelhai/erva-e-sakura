@@ -422,7 +422,7 @@ export class GameScene extends Phaser.Scene {
       this.world.plotSprites[i].setTexture(p.watered ? 'soilWet' : 'soil');
       if (p.crop) {
         v.crop.setTexture(`${p.crop}${p.stage}`).setVisible(true);
-        if (!p.watered && !isRipe(p)) v.crop.setTint(0xd8cfa8);
+        if (!p.watered && !isRipe(p)) v.crop.setTint(PAL.plantaSeca);
         else v.crop.clearTint();
       } else {
         v.crop.setVisible(false);

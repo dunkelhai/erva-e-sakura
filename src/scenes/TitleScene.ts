@@ -53,7 +53,7 @@ export class TitleScene extends Phaser.Scene {
       })
       .setOrigin(0.5)
       .setStroke(CSS.tinta, 8)
-      .setShadow(0, 4, '#00000055', 0, true, true);
+      .setShadow(0, 4, CSS.sombraSuave, 0, true, true);
     this.tweens.add({
       targets: title,
       y: 228,
