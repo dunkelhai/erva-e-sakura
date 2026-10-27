@@ -102,6 +102,7 @@ Escolhas tomadas sem consulta, para registro:
 - **Input:** a cena do jogo lê Z/Espaço/X/Shift por evento de `keydown` (e não por `JustDown`), para não perder toques muito rápidos. O delta de cada frame é limitado a 50 ms para que uma aba em segundo plano não faça o tempo saltar.
 - **Acessibilidade:** a opção "reduzir tremor/flash" fica na pausa (X) e zera o shake e o hit-flash branco.
 - **Áudio:** efeitos sintetizados com Web Audio, iniciados no Espaço da tela de título. Não há música.
+- **Paleta centralizada:** todas as cores (inclusive as derivadas, como pele morena, papel do shoji, planta seca e sombras de texto) ficam em `src/style/palette.ts`; nenhuma cena ou sistema usa hex solto.
 
 ## Próximos passos
 
